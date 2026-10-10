@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | SecureAccess</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="auth-card">
+        <div class="brand">SecureAccess</div>
+        <h1>Create account</h1>
+        <p class="subtitle">Register to get started.</p>
+
+        <form id="registerForm">
+            <label for="registerName">Username</label>
+            <input type="text" id="registerName" placeholder="Your name" maxlength="50" required>
+
+            <label for="registerEmail">Email address</label>
+            <input type="email" id="registerEmail" placeholder="you@example.com" required>
+
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" placeholder="At least 8 characters" required>
+            <p class="hint">Use at least 8 characters and include a number.</p>
+
+            <label for="confirmPassword">Confirm password</label>
+            <input type="password" id="confirmPassword" placeholder="Enter password again" required>
+
+            <p id="registerMessage" class="message" aria-live="polite"></p>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p class="switch-page">
+            Already registered?
+            <a href="index.html">Login</a>
+        </p>
+    </main>
+</body>
+
+</html>
